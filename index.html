@@ -459,7 +459,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
       
       <!-- Card: Languages & Databases -->
-      <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+      <article class="skill-card bg-white" data-aos="fade-up" data-aos-delay="100">
         <h4 class="skill-title">Languages & Databases</h4>
         <div class="skill-icons">
           <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" class="skill-logo">
@@ -472,7 +472,7 @@
       </article>
 
       <!-- Card: Frameworks -->
-      <article class="skill-card" data-aos="fade-up" data-aos-delay="200">
+      <article class="skill-card bg-white" data-aos="fade-up" data-aos-delay="200">
         <h4 class="skill-title">Frameworks</h4>
         <div class="skill-icons">
           <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" class="skill-logo">
@@ -483,7 +483,7 @@
       </article>
 
       <!-- Card: Tools -->
-      <article class="skill-card" data-aos="fade-up" data-aos-delay="300">
+      <article class="skill-card bg-white" data-aos="fade-up" data-aos-delay="300">
         <h4 class="skill-title">Tools</h4>
         <div class="skill-icons">
           <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" class="skill-logo">
@@ -494,7 +494,7 @@
       </article>
 
       <!-- Card: NoSQL -->
-      <article class="skill-card" data-aos="fade-up" data-aos-delay="400">
+      <article class="skill-card bg-white" data-aos="fade-up" data-aos-delay="400">
         <h4 class="skill-title">NoSQL Databases</h4>
         <div class="skill-icons">
           <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB" class="skill-logo">
@@ -505,6 +505,44 @@
     </div>
   </div>
 </section>
+<!-- ======= End Skills Section ======= -->
+
+<!-- ======= Custom Styles ======= -->
+<style>
+  .skill-card {
+    @apply bg-white rounded-2xl shadow-lg p-8 transition transform hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.02];
+  }
+
+  .skill-title {
+    @apply text-xl font-semibold text-indigo-800 border-b border-indigo-100 pb-3 mb-6;
+  }
+
+  .skill-icons {
+    @apply flex flex-wrap gap-6 items-center;
+  }
+
+  .skill-logo {
+    height: 50px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .skill-logo:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.25);
+    border-radius: 8px;
+  }
+</style>
+
+<!-- ======= AOS Animations ======= -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 <!-- ======= End Skills Section ======= -->
 
 <!-- ======= Custom Styles ======= -->
