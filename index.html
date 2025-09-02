@@ -440,105 +440,102 @@
 
   <!-- End Project Section -->
 
+<!-- Start skill section -->
+<!-- ======= Skills Section ======= -->
+<section id="skills" class="py-24 bg-gradient-to-b from-blue-50 via-indigo-50 to-white">
+  <div class="container mx-auto px-6 lg:px-12">
+    
+    <!-- Section Header -->
+    <header class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight text-indigo-900 mb-6">
+        Skills
+      </h2>
+      <p class="text-lg md:text-xl text-gray-700 font-medium max-w-3xl mx-auto leading-relaxed">
+        A showcase of my expertise across programming languages, frameworks, tools, and databases.
+      </p>
+    </header>
 
-  <!-- Start skill section -->
-
- import { motion } from "framer-motion";
-
-const skillsData = [
-  {
-    title: "Languages & Databases",
-    items: [
-      { src: "https://www.vectorlogo.zone/logos/python/python-horizontal.svg", alt: "Python" },
-      { src: "https://www.vectorlogo.zone/logos/java/java-horizontal.svg", alt: "Java" },
-      { src: "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg", alt: "HTML5" },
-      { src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg", alt: "CSS3" },
-      { src: "https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg", alt: "MySQL" },
-      { src: "https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg", alt: "JavaScript" },
-    ],
-  },
-  {
-    title: "Frameworks",
-    items: [
-      { src: "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg", alt: "Bootstrap" },
-      { src: "https://www.vectorlogo.zone/logos/springio/springio-ar21.svg", alt: "Spring" },
-      { src: "https://www.vectorlogo.zone/logos/springio/springio-icon.svg", alt: "Spring Boot" },
-      { src: "https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg", alt: "Django" },
-    ],
-  },
-  {
-    title: "Tools",
-    items: [
-      { src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg", alt: "Git" },
-      { src: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg", alt: "Google Cloud" },
-      { src: "https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg", alt: "Jupyter" },
-      { src: "https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg", alt: "VS Code" },
-    ],
-  },
-  {
-    title: "NoSQL Databases",
-    items: [
-      { src: "https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg", alt: "MongoDB" },
-      { src: "https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg", alt: "Firebase" },
-    ],
-  },
-];
-
-export default function Skills() {
-  return (
-    <section id="skills" className="py-24 bg-gradient-to-b from-blue-50 via-indigo-50 to-white">
-      <div className="container mx-auto px-6 lg:px-12">
-        {/* Section Title */}
-        <motion.div
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Skills
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A showcase of my expertise across programming languages, frameworks, tools, and databases.
-          </p>
-        </motion.div>
-
-        {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {skillsData.map((category, index) => (
-            <motion.div
-              key={category.title}
-              className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-[1.02]"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-            >
-              <h4 className="text-xl font-semibold text-indigo-800 border-b border-indigo-100 pb-3 mb-6">
-                {category.title}
-              </h4>
-              <div className="flex flex-wrap gap-6 items-center">
-                {category.items.map((item) => (
-                  <img
-                    key={item.alt}
-                    src={item.src}
-                    alt={item.alt}
-                    className="h-12 hover:scale-110 transition-transform duration-300"
-                  />
-                ))}
-              </div>
-            </motion.div>
-          ))}
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+      <!-- Card: Languages & Databases -->
+      <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="skill-title">Languages & Databases</h4>
+        <div class="skill-icons">
+          <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="HTML5" class="skill-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="MySQL" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="JavaScript" class="skill-logo">
         </div>
-      </div>
-    </section>
-  );
-}
+      </article>
 
+      <!-- Card: Frameworks -->
+      <article class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="skill-title">Frameworks</h4>
+        <div class="skill-icons">
+          <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="Bootstrap" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" alt="Spring" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring Boot" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django" class="skill-logo">
+        </div>
+      </article>
 
-  <!-- end skill section -->
+      <!-- Card: Tools -->
+      <article class="skill-card" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="skill-title">Tools</h4>
+        <div class="skill-icons">
+          <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="Google Cloud" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt="VS Code" class="skill-logo">
+        </div>
+      </article>
 
+      <!-- Card: NoSQL -->
+      <article class="skill-card" data-aos="fade-up" data-aos-delay="400">
+        <h4 class="skill-title">NoSQL Databases</h4>
+        <div class="skill-icons">
+          <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB" class="skill-logo">
+          <img src="https://www.vectorlogo.zone/logos/firebase/firebase-ar21.svg" alt="Firebase" class="skill-logo">
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- ======= End Skills Section ======= -->
+
+<!-- ======= Custom Styles ======= -->
+<style>
+  .skill-card {
+    @apply bg-white rounded-2xl shadow-lg p-8 transition transform hover:-translate-y-2 hover:shadow-2xl hover:scale-[1.02];
+  }
+  .skill-title {
+    @apply text-xl font-semibold text-indigo-800 border-b border-indigo-100 pb-3 mb-6;
+  }
+  .skill-icons {
+    @apply flex flex-wrap gap-6 items-center;
+  }
+  .skill-logo {
+    height: 50px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .skill-logo:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.25);
+    border-radius: 8px;
+  }
+</style>
+
+<!-- ======= AOS Animations ======= -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+<!-- end skill section -->
 
   <!-- Start Links section -->
   <section id="links" class="services">
